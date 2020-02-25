@@ -1,0 +1,24 @@
+﻿<Window x:Class="CustomUIControls.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomUIControls"
+        mc:Ignorable="d"
+        Title="Control Layout" Height="701" Width="641">
+    <Grid>
+        <local:CustomButton x:Name="redButton" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Text="ColorKey.Red" 
+                            ButtonColor="{x:Static local:ColorKey.Red}"/>
+        <local:CustomButton x:Name="blueButton" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" Text="ColorKey.Blue" 
+                            ButtonColor="{x:Static local:ColorKey.Blue}"/>
+        <local:CustomButton x:Name="greenButton" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Text="ColorKey.Green" 
+                            ButtonColor="{x:Static local:ColorKey.Green}"/>
+        <local:CustomButton x:Name="grayButton" HorizontalAlignment="Left" Margin="10,175,0,0" VerticalAlignment="Top" Text="ColorKey.Gray" 
+                            ButtonColor="{x:Static local:ColorKey.Gray}"/>
+        <local:CustomButton x:Name="yellowButton" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" Text="ColorKey.Yellow" 
+                            ButtonColor="{x:Static local:ColorKey.Yellow}"/>
+        <local:SearchTextBox x:Name="searchDelayed" HorizontalAlignment="Left" Margin="120,10,0,0" Text="Delayed Search" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" BorderBrush="Black" SearchMode="Delayed"/>
+        <local:SearchTextBox x:Name="searchInstant" HorizontalAlignment="Left" Margin="120,65,0,0" Text="Instant Search" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" BorderBrush="Black" SearchMode="Instant"/>
+
+    </Grid>
+</Window>
